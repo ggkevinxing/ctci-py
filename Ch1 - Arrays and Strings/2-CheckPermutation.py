@@ -1,5 +1,5 @@
 # sorting then seeing if they're the same, shorter and cleaner, though not necessarily optimal
-def checkPermutations_1(str1, str2):
+def CheckPermutations_1(str1, str2):
 	if len(str1) != len(str2):
 		return False
 	return ''.join(sorted(str1)) == ''.join(sorted(str2))
@@ -8,7 +8,7 @@ def checkPermutations_1(str1, str2):
 # compare character counts of the two strings
 from collections import defaultdict
 
-def checkPermutations_2(str1, str2):
+def CheckPermutations_2(str1, str2):
 	if len(str1) != len(str2):
 		return False
 	charDict = defaultdict(int)
